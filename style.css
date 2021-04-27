@@ -1,0 +1,64 @@
+body{
+  font-family: 'Montserrat', sans-serif;
+  margin-left: 20px;
+}
+
+input, button{
+  font-family: 'Montserrat', sans-serif;
+  outline: none;
+}
+input{
+  width: 500px;
+  height: 40px;
+  font-size: 18pt;
+  border-radius: 20px;
+  padding-left: 10px;
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+button{
+  cursor: pointer;
+  border-radius: 20px;
+  height: 40px;
+  width: 150px;
+  font-size: 20pt;
+  border: 1px solid black;
+  box-sizing: border-box;
+  margin-left: 20px;
+}
+.inputcontainer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+#btn6, #btn7, #btn8{
+  margin-top: 15px;
+}
+#btn7, #btn8 {
+  width: 300px;
+}
+
+#adr1, #adr2, #mask {
+  width: 400px;
+  margin-right: 20px;
+}
+
+.break{
+  flex-basis: 100%;
+  width: 100%;
+}
+table input {
+  width: 200px;
+}
+
+table th{
+  font-size: 18pt;
+  padding: 0 50px;
+}
+td{
+  padding:10px 50px;
+  font-size: 18pt;
+}
+p{
+  font-size: 14pt;
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <title>Mreze Laza i Pux</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <h1>1a. Zadatak - Konvertovanje iz binarne u dekadnu IP adresu </h1>
+    <p>Unesi binarnu IP adresu:</p>
+    <div class="inputcontainer">
+      <input type="text" name="" value="" id="bin" placeholder="Primer: 01101101010111000111110100001001">
+      <button type="button" name="button" id="btn1">Konvertuj</button>
+    </div>
+    <div id="postupak1">
+      <p>Postupak:</p>
+    </div>
+    <br>
+    <h1>1b. Zadatak - Konvertovanje iz dekadne u binarnu IP adresu</h1>
+    <p>Unesi dekadnu IP adresu:</p>
+    <div class="inputcontainer">
+      <input type="text" name="" value="" id="dek" placeholder="Primer: 192.168.0.1">
+      <button type="button" name="button" id="btn2">Konvertuj</button>
+    </div>
+    <div id="postupak2">
+      <p>Postupak:</p>
+    </div>
+    <h1>2. Zadatak - Data je IP adresa sa maskom naci Emisionu i Adresu mreze</h1>
+    <p>Unesi IP adresu:</p>
+    <div class="inputcontainer">
+    <input type="text" name="" value="" id="ipmask" placeholder="Primer: 109.92.125.9/24">
+    <button type="button" name="button" id="btn3">Prikazi</button>
+    </div>
+    <div id="postupak3">
+      <p>Postupak:</p>
+    </div>
+    <h1>3. Zadatak - Data je Maska naci maksimalni broj racunara na toj mrezi</h1>
+    <p>Unesi Masku:</p>
+    <div class="inputcontainer">
+    <input type="text" name="" value="" id="brojRac" placeholder="Primer: 255.255.255.0">
+    <button type="button" name="button" id="btn4">Prikazi</button>
+    </div>
+    <div id="postupak4">
+      <p>Postupak:</p>
+    </div>
+    <h1>4a. Zadatak - Da li je data IP adresa, adresa racunara ?</h1>
+    <p>Unesi IP adresu:</p>
+    <div class="inputcontainer">
+    <input type="text" name="" value="" id="moguce1" placeholder="Primer: 109.92.125.9/24">
+    <button type="button" name="button" id="btn5">Prikazi</button>
+    </div>
+    <div id="postupak5">
+      <p>Postupak:</p>
+    </div>
+    <h1>4b. Zadatak - Da li ove 2 IP adrese sa datom Maskom pripadaju istoj mrezi ?</h1>
+    <p>Unesi 2 IP adrese i Masku:</p>
+    <div class="inputcontainer">
+    <input type="text" name="" value="" id="adr1" placeholder="Primer: 109.92.125.9">
+    <input type="text" name="" value="" id="adr2" placeholder="Primer: 109.92.125.9">
+    <input type="text" name="" value="" id="mask" placeholder="Primer: 255.255.255.0">
+    <button type="button" name="button" id="btn6">Prikazi</button>
+    </div>
+    <div id="postupak6">
+      <p>Postupak:</p>
+    </div>
+    <h1>5. Zadatak - Podmrežavanja </h1>
+    <p>Unesi osnovnu IP adresu sa maskom:</p>
+    <div class="inputcontainer">
+    <input type="text" name="" value="" id="baseip" placeholder="Primer: 109.92.125.9/24">
+    <div class="break"></div>
+    <p>Unesi broj podmreza:</p>
+    <div class="break"></div>
+    <input type="text" name="" value="" id="brpm" placeholder="Primer: 4">
+    <div class="break"></div>
+    <button type="button" name="button" id="btn7">Napravi tabelu</button>
+    <button type="button" name="button" id="btn8" disabled>Popuni tabelu</button>
+    </div>
+    <br>
+    <p id="txt" style="display:none">Unesi broj racunara za svaku podmrezu u opadajucem redosledu</p>
+    <table id="tabela">
+      <tr>
+        <th>Broj racunara</th>
+        <th>Adresa podmreze</th>
+        <th>Maska podmreze</th>
+        <th>Broadcast podmreze</th>
+      </tr>
+    </table>
+    <script type="text/javascript" src="main.js"></script>
+  </body>
+</html>
